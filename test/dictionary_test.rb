@@ -9,7 +9,6 @@ class DictionaryTest < Minitest::Test
     car = Word.new('car', 'A transport')
     dictionary = Dictionary.new([apple, car])
 
-    pp dictionary.find_meaning(car)
     assert_equal 'A transport', dictionary.find_meaning('car')
     assert_equal 'A fruit', dictionary.find_meaning('apple')
   end
