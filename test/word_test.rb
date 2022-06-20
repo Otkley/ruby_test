@@ -6,7 +6,6 @@ require 'word'
 class WordTest < Minitest::Test
   def test_word
     apple = Word.new 'apple', 'A fruit'
-
     assert_equal 'apple', apple.word
   end
 
