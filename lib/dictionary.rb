@@ -9,9 +9,11 @@ class Dictionary
     @words.each do |word|
       if word.word == w
         return word.meaning
-      else
-        "At the moment we don't have that word registered."
       end
     end
   end
+
+  # def find_meaning(w)
+  #   @words.find { |word| word.word == w }
+  # end
 end
